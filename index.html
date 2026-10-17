@@ -2,13 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AstroWeb</title> 
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-    <input type="date" id="datepicker"/>
-   <div id="app"></div>
+   <div class="container">
+    <div class="search-section">
+      <div class="time-date">
+        <h2 id="clock">00 AM</h2>
+        <p id="current-date">Loading date...</p> 
+      </div>
+      <h1>AstroTab</h1>
+      <form action="https://www.google.com/search" method="get" target="_blank" class="search-form">
+         <input type="text " name="q" placeholder="Search the web..." autofocus autocomplete="off" />
+      </form>
+    </div> 
+    <div class="apod-card" id="apod-card">
+      <div class="loading">
+        Loading astronomy picture of the day
+      </div> 
+
+    </div>
+   </div>
+  <script type="module" src="/src/main.js"></script>
+
   </body>
 </html>
